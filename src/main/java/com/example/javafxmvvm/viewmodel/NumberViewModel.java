@@ -1,6 +1,6 @@
 package com.example.javafxmvvm.viewmodel;
 
-import com.example.javafxmvvm.view.NumberModel;
+import com.example.javafxmvvm.model.NumberModel;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 

@@ -1,6 +1,6 @@
 package com.example.javafxmvvm;
 
-import com.example.javafxmvvm.view.NumberModel;
+import com.example.javafxmvvm.model.NumberModel;
 import com.example.javafxmvvm.viewmodel.NumberViewModel;
 import javafx.application.Application;
 import javafx.scene.Scene;

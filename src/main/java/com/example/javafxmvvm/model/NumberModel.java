@@ -1,4 +1,4 @@
-package com.example.javafxmvvm.view;
+package com.example.javafxmvvm.model;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
