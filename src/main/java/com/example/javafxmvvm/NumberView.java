@@ -1,6 +1,6 @@
 package com.example.javafxmvvm;
 
-import com.example.javafxmvvm.view.NumberView;
+import com.example.javafxmvvm.view.NumberModel;
 import com.example.javafxmvvm.viewmodel.NumberViewModel;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 
 
-public class NumberStart extends Application {
+public class NumberView extends Application {
 
     private NumberViewModel numberViewModel;
 
@@ -21,9 +21,9 @@ public class NumberStart extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        NumberView numberView = new NumberView();
+        NumberModel numberModel = new NumberModel();
 
-        numberViewModel = new NumberViewModel(numberView);
+        numberViewModel = new NumberViewModel(numberModel);
 
         Label numberLabel = new Label();
         numberLabel.textProperty().bind(numberViewModel.numberStringProperty());

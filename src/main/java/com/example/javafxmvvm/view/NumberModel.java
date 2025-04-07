@@ -3,7 +3,7 @@ package com.example.javafxmvvm.view;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 
-public class NumberView {
+public class NumberModel {
     private DoubleProperty number = new SimpleDoubleProperty();
     public double getNumber() {
         return number.get();

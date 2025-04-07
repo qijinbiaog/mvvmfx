@@ -1,18 +1,18 @@
 package com.example.javafxmvvm.viewmodel;
 
-import com.example.javafxmvvm.view.NumberView;
+import com.example.javafxmvvm.view.NumberModel;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class NumberViewModel {
 
-    private NumberView numberView;
+    private NumberModel numberView;
 
     private SimpleStringProperty numberString = new SimpleStringProperty();
 
-    public NumberViewModel(NumberView numberView){
-        this.numberView = numberView;
-        numberString.bind(numberView.numberProperty().asString());
+    public NumberViewModel(NumberModel numberModel){
+        this.numberView = numberModel;
+        numberString.bind(numberModel.numberProperty().asString());
     }
 
     public StringProperty numberStringProperty(){
